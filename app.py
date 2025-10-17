@@ -5,7 +5,13 @@ TalentScout Hiring Assistant - Main Streamlit Application
 import streamlit as st
 import os
 from dotenv import load_dotenv
-
+# Load Hugging Face API Key from Streamlit Secrets
+if 'HUGGING_FACE_API_KEY' in st.secrets:
+    os.environ['HUGGING_FACE_API_KEY'] = st.secrets['HUGGING_FACE_API_KEY']
+    st.success("✅ API Key Loaded from Secrets!")
+else:
+    st.error("❌ API Key not found in Secrets!")
+    
 # Load environment variables from .env file
 load_dotenv()
 
