@@ -36,7 +36,7 @@ class HiringAssistantChatbot:
             self.use_llm = bool(self.api_key and len(self.api_key) > 10)
             
             if self.use_llm:
-                self.api_url = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2"
+                self.api_url = "https://api-inference.huggingface.co/models/microsoft/DialoGPT-medium"
                 self.headers = {"Authorization": f"Bearer {self.api_key}"}
                 st.success("✅ Hugging Face API connected!")
             else:
@@ -126,31 +126,16 @@ class HiringAssistantChatbot:
         text = re.sub(r'<s>|</s>', '', text)
         return text.strip()
     
-    def _format_messages_for_mistral(self, messages: List[Dict], use_json: bool = False) -> str:
-        """
-        Format messages for Mistral instruction format
-        """
-        prompt_parts = []
-        
-        for msg in messages:
-            role = msg.get('role', '')
-            content = msg.get('content', '')
-            
-            if role == 'system':
-                prompt_parts.append(f"<s>[INST] {content}")
-            elif role == 'user':
-                if prompt_parts:
-                    prompt_parts.append(f"\n{content} [/INST]")
-                else:
-                    prompt_parts.append(f"<s>[INST] {content} [/INST]")
-            elif role == 'assistant':
-                prompt_parts.append(f" {content}</s>")
-        
-        if use_json:
-            if prompt_parts[-1].endswith('[/INST]'):
-                prompt_parts[-1] = prompt_parts[-1].replace('[/INST]', '\n\nIMPORTANT: Respond ONLY with valid JSON. [/INST]')
-        
-        return ''.join(prompt_parts)
+   def _format_messages_for_mistral(self, messages: List[Dict], use_json: bool = False) -> str:
+    """Simple prompt formatting that works with DialoGPT"""
+    last_user_message = ""
+    for msg in reversed(messages):
+        if msg.get('role') == 'user':
+            last_user_message = msg.get('content', '')
+            break
+    
+    # Simple prompt that works with DialoGPT
+    return f"User: {last_user_message}\nAssistant:"
     
     def generate_greeting(self) -> str:
         """Generate initial greeting message - using simple fallback to avoid API issues"""
