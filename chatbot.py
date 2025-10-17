@@ -126,13 +126,16 @@ class HiringAssistantChatbot:
         text = re.sub(r'<s>|</s>', '', text)
         return text.strip()
     
-   def _format_messages_for_mistral(self, messages: List[Dict], use_json: bool = False) -> str:
+    def _format_messages_for_mistral(self, messages: List[Dict], use_json: bool = False) -> str:
     """Simple prompt formatting that works with DialoGPT"""
     last_user_message = ""
     for msg in reversed(messages):
         if msg.get('role') == 'user':
             last_user_message = msg.get('content', '')
             break
+    
+    # Simple prompt that works with DialoGPT
+    return f"User: {last_user_message}\nAssistant:"
     
     # Simple prompt that works with DialoGPT
     return f"User: {last_user_message}\nAssistant:"
