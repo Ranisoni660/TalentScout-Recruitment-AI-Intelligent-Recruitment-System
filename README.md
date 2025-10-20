@@ -2,9 +2,13 @@
 🚀 TalentScout AI Hiring Assistant - Complete AI/ML Intern Assignment Solution
 
 Developed by: Rani Soni
+
 Email: ranisoni6298@gmail.com
+
 Position: AI/ML Intern
+
 Submission Date: 17/10/25
+
 
 <img width="1264" height="589" alt="2025-10-16 05 40 24" src="https://github.com/user-attachments/assets/c62067c8-735a-45b2-bb2f-b3780b9e3371" />
 
