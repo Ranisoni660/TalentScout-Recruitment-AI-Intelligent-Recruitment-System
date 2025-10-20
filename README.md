@@ -39,19 +39,37 @@ Submission Date: 17/10/25
 🎯 Project Overview
 
 TalentScout AI Hiring Assistant is an intelligent, conversational chatbot designed to revolutionize the initial candidate screening process for technology placements. This AI-powered assistant conducts comprehensive interviews, collects essential candidate information, and generates tailored technical questions based on the candidate's declared tech stack.
+
+
 🎯 Assignment Requirements Fulfilled
+
 Requirement	Status	Implementation Details
+
 User Interface	✅	Streamlit with custom CSS styling
+
 Chatbot Capabilities	✅	Full conversation flow with 10 states
+
 Information Gathering	✅	7 essential data points collected
+
 Tech Stack Declaration	✅	Intelligent parsing & categorization
+
 Technical Questions	✅	3-5 tailored questions generated
+
 Context Handling	✅	Stateful conversation management
+
 Fallback Mechanism	✅	Robust error handling
+
 End Conversation	✅	Graceful exit with next steps
+
 LLM Integration	✅	Hugging Face API with DialoGPT
+
 Deployment	✅	Streamlit Cloud (Live Demo)
+
+
+
 ✨ Features & Capabilities
+
+
 🎯 Core Features (Required)
 
     🤖 Intelligent Greeting & Introduction - Professional onboarding experience
@@ -93,7 +111,9 @@ Deployment	✅	Streamlit Cloud (Live Demo)
 
 
 🏗️ Technical Architecture
+
 🔧 Tech Stack
+
 python
 
 Frontend: Streamlit + Custom CSS + Animations
@@ -102,6 +122,7 @@ AI Model: Hugging Face Inference API (DialoGPT-medium)
 State Management: Streamlit Session State
 Validation: Custom regex-based validators
 Deployment: Streamlit Community Cloud
+
 
 📊 System Architecture
 text
