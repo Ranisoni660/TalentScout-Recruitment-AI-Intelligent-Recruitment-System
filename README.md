@@ -5,6 +5,9 @@ Developed by: Rani Soni
 Email: ranisoni6298@gmail.com
 Position: AI/ML Intern
 Submission Date: 17/10/25
+
+<img width="1264" height="589" alt="2025-10-16 05 40 24" src="https://github.com/user-attachments/assets/c62067c8-735a-45b2-bb2f-b3780b9e3371" />
+
 📋 Table of Contents
 
     Project Overview
@@ -61,7 +64,7 @@ Deployment	✅	Streamlit Cloud (Live Demo)
 
     👋 Graceful Exit - Professional conversation ending with next steps
 
-🚀 Bonus Features (Optional Enhancements)
+🚀 Bonus Features 
 
     🎨 Advanced UI/UX - Professional gradient design with animations and custom CSS
 
@@ -76,6 +79,14 @@ Deployment	✅	Streamlit Cloud (Live Demo)
     ⚡ Performance Optimization - Efficient state management and API handling
 
     🎯 Export-Ready Data - Structured candidate profiles for integration
+
+
+<img width="1366" height="602" alt="1" src="https://github.com/user-attachments/assets/816e2a1e-65e3-404d-ac46-d819ce164025" />
+
+<img width="1366" height="602" alt="2" src="https://github.com/user-attachments/assets/bf393a8b-6ed5-4ebb-b18a-dedaa93a4185" />
+
+<img width="1366" height="602" alt="3" src="https://github.com/user-attachments/assets/39370987-5cc1-4806-ae04-0f8ef068a8a6" />
+
 
 🏗️ Technical Architecture
 🔧 Tech Stack
@@ -96,6 +107,14 @@ Candidate Input → Streamlit UI → Chatbot Engine → Hugging Face API
    Validation    State Management  Response      AI Processing
        ↓              ↓           Generation        ↓
    Data Storage → Progress Tracking → Conversation Flow
+
+<img width="1137" height="562" alt="4" src="https://github.com/user-attachments/assets/6bd48b17-b81c-4664-8eab-196b9bbff383" />
+
+<img width="1103" height="602" alt="5" src="https://github.com/user-attachments/assets/e9d75f4b-fe8a-4246-b22f-84a13fe28690" />
+
+
+<img width="1064" height="602" alt="6" src="https://github.com/user-attachments/assets/5555d438-faca-4f11-8414-ce8a408f0459" />
+
 
 🛠️ Installation & Setup
 Prerequisites
@@ -157,6 +176,19 @@ Step 5: Run Application
 bash
 
 streamlit run app.py
+
+
+
+
+<img width="1131" height="600" alt="7" src="https://github.com/user-attachments/assets/d3e061cd-f80a-4d5e-abd8-7c39bbff4787" />
+
+<img width="1083" height="590" alt="8" src="https://github.com/user-attachments/assets/458a7bd3-98b4-46d7-96b8-36dced2e7dcd" />
+
+<img width="1105" height="588" alt="9" src="https://github.com/user-attachments/assets/8bb0c463-5691-48f5-907d-d51198603e05" />
+
+
+<img width="303" height="588" alt="10" src="https://github.com/user-attachments/assets/434078ba-2f04-4fcd-b708-f1b357a1da70" />
+
 
 🌐 Deployment Guide
 Streamlit Cloud Deployment
